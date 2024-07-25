@@ -12,17 +12,51 @@ export const Post = () => {
 
         try{
 
-            const response = await fetch('https://reqres.in/api/users', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ nam, job })
-            });
+            // POST -- CREAR
+
+            // const response = await fetch('https://reqres.in/api/users', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Accept': 'application/json',
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({ nam, job })
+            // });
     
-            const content = await response.json();
-            console.log( content );
+            // const content = await response.json();
+            // console.log( content );
+
+            // PUT - ACTUALIZAR
+
+            // const response = await fetch('https://reqres.in/api/users', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Accept': 'application/json',
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({ nam, job })
+            // });
+
+
+            // DELETE -- BORRAR
+            
+            // const response = await fetch('https://reqres.in/api/users', {
+            //     method: 'DELETE',
+            //     headers: {
+            //         'Accept': 'application/json',
+            //         'Content-Type': 'application/json'
+            //     },
+            //     body: JSON.stringify({ nam, job })
+            // });
+    
+            // const content = await response.json();
+            // console.log( content );
+
+    
+            // const content = await response.json();
+            // console.log( content );
+
+            
 
         }catch( error ){
             console.log(error.message);
